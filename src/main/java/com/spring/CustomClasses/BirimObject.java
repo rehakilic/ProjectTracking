@@ -1,9 +1,16 @@
 package com.spring.CustomClasses;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 import java.util.ArrayList;
 
+@JsonIgnoreProperties("ustBirimId")
+@JsonPropertyOrder({"altMenuler","birimId","birim_adi","ustBirimId"})
 public class BirimObject {
     private int birimId;
+    @JsonProperty("birim_adi")
     private String birimAdi;
     private long ustBirimId;
     private ArrayList<BirimObject> altMenuler;
