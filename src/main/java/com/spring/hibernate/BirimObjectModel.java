@@ -6,6 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
+@Table(name = "test")
 public class BirimObjectModel {
     @Id
     private int birimId;
