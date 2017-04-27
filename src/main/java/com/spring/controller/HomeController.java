@@ -4,7 +4,6 @@ package com.spring.controller;
 import com.spring.CustomClasses.BirimObject;
 import com.spring.CustomClasses.TestObject;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;

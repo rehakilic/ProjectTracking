@@ -12,6 +12,9 @@ public class ApiController {
 
     @RequestMapping(value = "/recursive", method = RequestMethod.GET)
     public ArrayList<BirimObject> recursive(){
+
+
+
         ArrayList<BirimObject> birimObjectArrayList = new ArrayList<BirimObject>();
         birimObjectArrayList.add(new BirimObject(1,"Dota 2",0, new ArrayList<BirimObject>()));
         birimObjectArrayList.add(new BirimObject(2,"Strength",1,new ArrayList<BirimObject>()));
