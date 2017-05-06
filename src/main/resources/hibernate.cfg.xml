@@ -29,5 +29,7 @@
         <!-- Mention here all the model classes along with their package name -->
         <mapping class="com.spring.hibernate.BirimObjectModel"/>
         <mapping class="com.spring.hibernate.MobileNumbersModel"/>
+        <mapping class="com.spring.hibernate.BirimPartsModel"/>
+
     </session-factory>
 </hibernate-configuration>

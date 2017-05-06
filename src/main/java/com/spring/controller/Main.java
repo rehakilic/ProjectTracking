@@ -1,6 +1,7 @@
 package com.spring.controller;
 
 import com.spring.hibernate.BirimObjectModel;
+import com.spring.hibernate.BirimPartsModel;
 import com.spring.hibernate.MobileNumbersModel;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -22,6 +23,11 @@ public class Main {
         birimObjectModel.setBirimAdi("test4");
         birimObjectModel.setUstBirimId(2);
         birimObjectModel.setCreatedDate(new Date());
+
+        BirimPartsModel birimPartsModel = new BirimPartsModel();
+        birimPartsModel.setBirimPartName("testpart");
+
+        birimObjectModel.setBirimPartsModel(birimPartsModel);
 
         MobileNumbersModel mobileNumbersModel = new MobileNumbersModel();
         mobileNumbersModel.setMobile_no(12412513);
