@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="e265688f-033a-40eb-9a8a-a8dde4ac34c5">
+      <database-info product="MySQL" version="5.5.40-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <user-name>b0110ad21949f6</user-name>
+      <user-password>dfc0dfcedfc8dfc9df90dfc7dfd3dfd9dfdbdfc6df90df85df85dfcfdfdfdf87dfc9dfcedfc8dfd8df87dfdddfcfdfd9dfdedf87df9adf9bdf84dfc9dfc6dfcfdfcbdfd8dfcedfc8df84dfc9dfc5dfc7df85dfc2dfcfdfd8dfc5dfc1dfdfdff5dfc8df9edf9fdf9edfcedfcedfccdf9ddf9bdfc9dfcedf93dfc9dfcedf99</user-password>
+      <resolve-scope>heroku_b454ddf71cd9cd3:</resolve-scope>
+    </data-source>
+  </component>
+</project>

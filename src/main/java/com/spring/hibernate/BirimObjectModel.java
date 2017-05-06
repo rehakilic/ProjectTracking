@@ -1,25 +1,27 @@
 package com.spring.hibernate;
 
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+
+import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "test")
 public class BirimObjectModel {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int birimId;
+
+    @Column(name = "Adi", nullable = false)
     private String birimAdi;
+
+    @Transient
     private long ustBirimId;
 
-    public int getBirimId() {
-        return birimId;
-    }
+    @Temporal(TemporalType.DATE)
+    private Date createdDate;
 
-    public void setBirimId(int birimId) {
-        this.birimId = birimId;
-    }
+
 
     public String getBirimAdi() {
         return birimAdi;
@@ -37,4 +39,11 @@ public class BirimObjectModel {
         this.ustBirimId = ustBirimId;
     }
 
+    public Date getCreatedDate() {
+        return createdDate;
+    }
+
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
+    }
 }
