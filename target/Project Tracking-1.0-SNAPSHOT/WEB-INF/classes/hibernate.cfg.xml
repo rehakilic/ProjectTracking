@@ -12,7 +12,7 @@
         <property name="connection.password">e6ee4674</property>
 
         <!-- JDBC connection pool (use the built-in) -->
-        <property name="connection.pool_size">100</property>
+        <property name="connection.pool_size">10</property>
 
         <!-- SQL dialect -->
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect </property>
@@ -28,6 +28,6 @@
 
         <!-- Mention here all the model classes along with their package name -->
         <mapping class="com.spring.hibernate.BirimObjectModel"/>
-
+        <mapping class="com.spring.hibernate.MobileNumbersModel"/>
     </session-factory>
 </hibernate-configuration>

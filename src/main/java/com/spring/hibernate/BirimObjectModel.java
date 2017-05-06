@@ -6,8 +6,9 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "test")
+@Table(name = "Birim_Object")
 public class BirimObjectModel {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int birimId;
@@ -21,6 +22,9 @@ public class BirimObjectModel {
     @Temporal(TemporalType.DATE)
     private Date createdDate;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "birimId")
+    private MobileNumbersModel mobileNumbersModel;
 
 
     public String getBirimAdi() {
@@ -45,5 +49,13 @@ public class BirimObjectModel {
 
     public void setCreatedDate(Date createdDate) {
         this.createdDate = createdDate;
+    }
+
+    public MobileNumbersModel getMobileNumbersModel() {
+        return mobileNumbersModel;
+    }
+
+    public void setMobileNumbersModel(MobileNumbersModel mobileNumbersModel) {
+        this.mobileNumbersModel = mobileNumbersModel;
     }
 }

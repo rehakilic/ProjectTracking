@@ -1,7 +1,6 @@
 package com.spring.controller;
 
 
-import com.spring.CustomClasses.BirimObject;
 import com.spring.CustomClasses.TestObject;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 
 
