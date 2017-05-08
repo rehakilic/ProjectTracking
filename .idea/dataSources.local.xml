@@ -8,8 +8,9 @@
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <user-name>b0110ad21949f6</user-name>
-      <user-password>dfc0dfcedfc8dfc9df90dfc7dfd3dfd9dfdbdfc6df90df85df85dfcfdfdfdf87dfc9dfcedfc8dfd8df87dfdddfcfdfd9dfdedf87df9adf9bdf84dfc9dfc6dfcfdfcbdfd8dfcedfc8df84dfc9dfc5dfc7df85dfc2dfcfdfd8dfc5dfc1dfdfdff5dfc8df9edf9fdf9edfcedfcedfccdf9ddf9bdfc9dfcedf93dfc9dfcedf99</user-password>
+      <introspection-schemas>*:heroku_b454ddf71cd9cd3</introspection-schemas>
       <resolve-scope>heroku_b454ddf71cd9cd3:</resolve-scope>
+      <unqualified-resolve-schemas>heroku_b454ddf71cd9cd3:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>
