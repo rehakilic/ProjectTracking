@@ -12,7 +12,7 @@ import java.util.Date;
 
 public class Main {
 
-    public static void main (String[] args){
+    public static void main(String[] args) {
 
         final SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         final Session session = sessionFactory.openSession();
@@ -20,22 +20,34 @@ public class Main {
 
 
         BirimObjectModel birimObjectModel = new BirimObjectModel();
-        birimObjectModel.setBirimAdi("test4");
-        birimObjectModel.setUstBirimId(2);
+        birimObjectModel.setBirimAdi("test3");
+        birimObjectModel.setUstBirimId(5);
         birimObjectModel.setCreatedDate(new Date());
+
+        BirimObjectModel birimObjectModel2 = new BirimObjectModel();
+        birimObjectModel2.setBirimAdi("test4");
+        birimObjectModel2.setUstBirimId(2);
+        birimObjectModel2.setCreatedDate(new Date());
 
         BirimPartsModel birimPartsModel = new BirimPartsModel();
         birimPartsModel.setBirimPartName("testpart");
 
-        birimObjectModel.setBirimPartsModel(birimPartsModel);
+
+        //birimObjectModel.setBirimPartsModel(birimPartsModel);
 
         MobileNumbersModel mobileNumbersModel = new MobileNumbersModel();
         mobileNumbersModel.setMobile_no(12412513);
 
-        birimObjectModel.setMobileNumbersModel(mobileNumbersModel);
+        birimObjectModel2.setMobileNumbersModel(mobileNumbersModel);
         //mobileNumbersModel.setBirimObjectModel(birimObjectModel);
 
-        session.save(birimObjectModel);
+
+        birimPartsModel.getBirimObjectModels().add(birimObjectModel2);
+        birimPartsModel.getBirimObjectModels().add(birimObjectModel);
+
+
+        session.save(birimPartsModel);
+        //session.save(birimObjectModel2);
         //session.save(mobileNumbersModel);
 
         tx.commit();

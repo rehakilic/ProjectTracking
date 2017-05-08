@@ -26,9 +26,12 @@ public class BirimObjectModel {
     @JoinColumn(name = "birimId")
     private MobileNumbersModel mobileNumbersModel;
 
+
     @ManyToOne(cascade = CascadeType.ALL)
     private BirimPartsModel birimPartsModel;
 
+    //@ManyToOne(cascade = CascadeType.ALL)
+    //private BirimPartsModel birimPartsModel;
 
     public String getBirimAdi() {
         return birimAdi;
@@ -62,11 +65,11 @@ public class BirimObjectModel {
         this.mobileNumbersModel = mobileNumbersModel;
     }
 
-    public BirimPartsModel getBirimPartsModel() {
-        return birimPartsModel;
-    }
-
-    public void setBirimPartsModel(BirimPartsModel birimPartsModel) {
-        this.birimPartsModel = birimPartsModel;
-    }
+//    public BirimPartsModel getBirimPartsModel() {
+//        return birimPartsModel;
+//    }
+//
+//    public void setBirimPartsModel(BirimPartsModel birimPartsModel) {
+//        this.birimPartsModel = birimPartsModel;
+//    }
 }
