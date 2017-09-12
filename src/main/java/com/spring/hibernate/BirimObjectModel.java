@@ -28,6 +28,7 @@ public class BirimObjectModel {
 
 
     @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "birim_parcasi_id")
     private BirimPartsModel birimPartsModel;
 
     //@ManyToOne(cascade = CascadeType.ALL)

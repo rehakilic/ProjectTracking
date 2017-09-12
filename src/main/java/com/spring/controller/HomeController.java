@@ -21,7 +21,6 @@ public class HomeController {
         binder.setDisallowedFields(new String("mobile"));
         SimpleDateFormat format = new SimpleDateFormat("yyyy**MM**dd");
         binder.registerCustomEditor(Date.class, new CustomDateEditor(format,false));
-
     }
 
     @RequestMapping (value = "/testform", method = RequestMethod.GET)
@@ -33,10 +32,10 @@ public class HomeController {
     public void addingCommonObjects(Model model1){
         model1.addAttribute("headerMessage", "test header message");
     }
+
     @RequestMapping (value = "/submitform", method = RequestMethod.POST)
     public ModelAndView submitForm (@ModelAttribute("testObjectM") TestObject testObject, BindingResult result) {
-       return result.hasErrors() ? new ModelAndView("testform") :
-               new ModelAndView("successform");
+       return result.hasErrors() ? new ModelAndView("testform") : new ModelAndView("successform");
     }
 
 }
